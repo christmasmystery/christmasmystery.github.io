@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Merry Christmas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        
+    </header>
+
+    <main class="main-container">
+        <section id="game">
+            <div id="story">
+                <p>Santa fucked up and got too drunk. In his drunken stupor he misplaced 3 of your gifts. All hopes is not lost however. His helpful elf wrote down a list of instructions on how to find them. Will you save Christmas????????</p>
+                <button onclick="reveal();">Yes</button> 
+                <button onclick="sadFace();">No</button>
+            </div>
+
+            <div id="instructions">
+                <p></p>
+            </div>
+
+            <form id="form" hidden>
+                <input type="text" maxlength="1" pattern="[a-zA-Z]">
+                <input type="text" maxlength="1" pattern="[a-zA-Z]">
+                <input type="text" maxlength="1" pattern="[a-zA-Z]">
+                <input type="text" maxlength="1" pattern="[a-zA-Z]">
+                <input type="text" maxlength="1" pattern="[a-zA-Z]">
+                <input type="text" maxlength="1" pattern="[a-zA-Z]">
+                <input type="text" maxlength="1" pattern="[a-zA-Z]">
+                <input type="text" maxlength="1" pattern="[a-zA-Z]">
+                <input type="text" maxlength="1" pattern="[a-zA-Z]">
+                <label>Check</label>
+                <button type="button" onclick="check();">&#10003;</button>
+            </form>
+
+            <div id="success" hidden></div>
+        </section>
+
+        <section id="grinch" hidden>
+            <img src="img/grinch.jpg" width="300" height="300">
+            <p>:( Please</p>
+            <button onclick="okay();">Okay</button>
+            <button onclick="redFace();">NO!</button>
+        </section>
+
+        <section id="ruined" hidden>
+            <img src="img/angryface.png" width="300" height="300">
+            <p>Click the smiley face to rethink your life choices</p>
+            <button onclick="window.location.reload()"><img src="img/smileyface.png" width="50" height="50"></button>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

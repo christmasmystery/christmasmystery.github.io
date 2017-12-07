@@ -1,0 +1,29 @@
+.main-container{
+    padding:20px;
+}
+
+input{
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+input.correct{
+    background-color: #3c8d0d;
+    color: #ffffff;
+}
+
+input.wrong{
+    background-color: #d42426;
+    color: #ffffff;
+}
+
+label{
+    display: block;
+}
+button{
+    display: inline-block;
+}
