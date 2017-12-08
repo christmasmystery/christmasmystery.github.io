@@ -14,8 +14,8 @@
         <section id="game">
             <div id="story">
                 <p>Santa fucked up and got too drunk. In his drunken stupor he misplaced 3 of your gifts. All hope is not lost however. His helpful elf wrote down a list of instructions on how to find them. Will you save Christmas????????</p>
-                <button onclick="reveal();">Yes</button> 
-                <button onclick="sadFace();">No</button>
+                <button onclick="reveal();"><img src="img/smileyface.png"></button>
+                <button onclick="sadFace();"><img src="img/angryface.png"></button>
             </div>
 
             <div id="instructions">
@@ -40,16 +40,15 @@
         </section>
 
         <section id="grinch" hidden>
-            <img src="img/grinch.jpg" width="300" height="300">
-            <p>:( Please</p>
-            <button onclick="okay();">Okay</button>
-            <button onclick="redFace();">NO!</button>
+            <img src="img/grinch.png">
+            <button onclick="okay();"><img src="img/smileyface.png"></button>
+            <button onclick="redFace();"><img src="img/angryface.png"></button>
         </section>
 
         <section id="ruined" hidden>
-            <img src="img/angryface.png" width="300" height="300">
+            <img src="img/angryface.png">
             <p>Click the smiley face to rethink your life choices</p>
-            <button onclick="window.location.reload()"><img src="img/smileyface.png" width="50" height="50"></button>
+            <button onclick="window.location.reload()"><img src="img/smileyface.png"></button>
         </section>
     </main>
 

@@ -1,6 +1,10 @@
-.main-container{
+body{
     font-family: 'Indie Flower', sans-serif;
-    padding: 20px;
+}
+
+
+.main-container{
+    padding: 10px;
     font-size: 40px;
 }
 
@@ -8,6 +12,7 @@ input{
     width: 40px;
     height: 40px;
     font-size: 35px;
+    font-family: 'Indie Flower', sans-serif;
     text-align: center;
     text-transform: uppercase;
     display: inline-block;
@@ -26,6 +31,11 @@ input.wrong{
 label{
     display: block;
 }
+
+img{
+    display: inline-block;
+}
+
 button{
     display: inline-block;
 }
