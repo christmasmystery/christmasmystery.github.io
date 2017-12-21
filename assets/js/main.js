@@ -175,7 +175,9 @@ function check(){
 	});
 
 	if(arraysEqual(values, password)) {
-		$("#success").show();
+		$("#fourth").show();
+		$("#clue").show();
+	}
 }
 
 function arraysEqual(arr1, arr2){

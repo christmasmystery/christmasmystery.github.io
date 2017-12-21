@@ -1890,7 +1890,8 @@
 				}
 
 		.box.style3 {
-			background: #fff;
+			background: #000000;
+			color: #ffffff;
 			padding: 3em;
 		}
 
@@ -2528,3 +2529,26 @@
 			}
 
 	}
+
+#form button{
+	display: block;
+	margin: 0 auto;
+}
+
+input.correct{
+	background-color: #3c8d0d !important;
+	color: #ffffff;
+}
+
+input.wrong{
+	background-color: #cc3333 !important;
+	color: #ffffff;
+}
+
+#clue p{
+	text-align: center;
+}
+
+.spacer{
+	height: 50px;
+}
