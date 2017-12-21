@@ -1,62 +1,109 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Merry Christmas</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        
-    </header>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Christmas Mystery</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
 
-    <main class="main-container">
-        <section id="game">
-            <div id="story">
-                <p>Santa fucked up and got too drunk. In his drunken stupor he misplaced 3 of your gifts. All hope is not lost however. His helpful elf wrote down a list of instructions on how to find them. Will you save Christmas????????</p>
-                <button onclick="reveal();"><img src="img/smileyface.png"></button>
-                <button onclick="sadFace();"><img src="img/angryface.png"></button>
-            </div>
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<h1>Christmas Mystery</h1>
+					<p>2017</p>
+				</header>
+				<footer>
+					<a href="#banner" class="button style2 scrolly-middle">Learn the details</a>
+				</footer>
+			</section>
 
-            <div id="instructions">
-                <p></p>
-            </div>
+		<!-- Banner -->
+			<section id="banner">
+				<header>
+					<h2>Santa Fucked Up</h2>
+				</header>
+				<p>Santa fucked up and got too drunk. In his drunken stupor he misplaced 3 of your gifts. All hope is not lost however. His helpful elf wrote down a list of instructions on how to find them. Will you save Christmas????????</p>
+				<footer>
+					<a href="#first" class="button style2 scrolly">Tell us more!</a>
+				</footer>
+			</section>
 
-            <form id="form" hidden>
-                <input type="text" maxlength="1" pattern="[a-zA-Z]">
-                <input type="text" maxlength="1" pattern="[a-zA-Z]">
-                <input type="text" maxlength="1" pattern="[a-zA-Z]">
-                <input type="text" maxlength="1" pattern="[a-zA-Z]">
-                <input type="text" maxlength="1" pattern="[a-zA-Z]">
-                <input type="text" maxlength="1" pattern="[a-zA-Z]">
-                <input type="text" maxlength="1" pattern="[a-zA-Z]">
-                <input type="text" maxlength="1" pattern="[a-zA-Z]">
-                <input type="text" maxlength="1" pattern="[a-zA-Z]">
-                <label>Check</label>
-                <button type="button" onclick="check();">&#10003;</button>
-            </form>
+		<!-- Feature 1 -->
+			<article id="first" class="container box style1 right">
+				<a href="#" class="image fit"><img src="images/pic01.jpg" alt="" /></a>
+				<div class="inner">
+					<header>
+						<h2>Lorem ipsum<br />
+						dolor sit amet</h2>
+					</header>
+					<p>Tortor faucibus ullamcorper nec tempus purus sed penatibus. Lacinia pellentesque eleifend vitae est elit tristique velit tempus etiam.</p>
+				</div>
+			</article>
 
-            <div id="success" hidden></div>
-        </section>
+		<!-- Feature 2 -->
+			<article class="container box style1 left">
+				<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+				<div class="inner">
+					<header>
+						<h2>Mollis posuere<br />
+						lectus lacus</h2>
+					</header>
+					<p>Rhoncus mattis egestas sed fusce sodales rutrum et etiam ullamcorper. Etiam egestas scelerisque ac duis magna lorem ipsum dolor.</p>
+				</div>
+			</article>
 
-        <section id="grinch" hidden>
-            <img src="img/grinch.png">
-            <button onclick="okay();"><img src="img/smileyface.png"></button>
-            <button onclick="redFace();"><img src="img/angryface.png"></button>
-        </section>
+		<!-- Portfolio -->
+			<article class="container box style2">
+				<header>
+					<h2>Magnis parturient</h2>
+					<p>Justo phasellus et aenean dignissim<br />
+					placerat cubilia purus lectus.</p>
+				</header>
+				<div class="inner gallery">
+					<div class="row 0%">
+						<div class="3u 12u(mobile)"><a href="images/fulls/01.jpg" class="image fit"><img src="images/thumbs/01.jpg" alt="" title="Ad infinitum" /></a></div>
+						<div class="3u 12u(mobile)"><a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.jpg" alt="" title="Dressed in Clarity" /></a></div>
+						<div class="3u 12u(mobile)"><a href="images/fulls/03.jpg" class="image fit"><img src="images/thumbs/03.jpg" alt="" title="Raven" /></a></div>
+						<div class="3u 12u(mobile)"><a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" alt="" title="I'll have a cup of Disneyland, please" /></a></div>
+					</div>
+					<div class="row 0%">
+						<div class="3u 12u(mobile)"><a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.jpg" alt="" title="Cherish" /></a></div>
+						<div class="3u 12u(mobile)"><a href="images/fulls/06.jpg" class="image fit"><img src="images/thumbs/06.jpg" alt="" title="Different." /></a></div>
+						<div class="3u 12u(mobile)"><a href="images/fulls/07.jpg" class="image fit"><img src="images/thumbs/07.jpg" alt="" title="History was made here" /></a></div>
+						<div class="3u 12u(mobile)"><a href="images/fulls/08.jpg" class="image fit"><img src="images/thumbs/08.jpg" alt="" title="People come and go and walk away" /></a></div>
+					</div>
+				</div>
+			</article>
 
-        <section id="ruined" hidden>
-            <img src="img/ruined.png">
-            <p>Click the smiley face to rethink your life choices</p>
-            <button onclick="window.location.reload()"><img src="img/smileyface.png"></button>
-        </section>
-    </main>
+		<!-- Contact -->
+			<article class="container box style3">
+				<header>
+					<h2>Nisl sed ultricies</h2>
+					<p>Diam dignissim lectus eu ornare volutpat orci.</p>
+				</header>
+				<form id="form">
+					<input type="text" maxlength="1" pattern="[a-zA-Z]">
+					<input type="text" maxlength="1" pattern="[a-zA-Z]">
+					<input type="text" maxlength="1" pattern="[a-zA-Z]">
+					<input type="text" maxlength="1" pattern="[a-zA-Z]">
+					<input type="text" maxlength="1" pattern="[a-zA-Z]">
+					<input type="text" maxlength="1" pattern="[a-zA-Z]">
+					<input type="text" maxlength="1" pattern="[a-zA-Z]">
+					<input type="text" maxlength="1" pattern="[a-zA-Z]">
+					<input type="text" maxlength="1" pattern="[a-zA-Z]">
+					<button type="button" onclick="check();">Check</button>
+				</form>
+			</article>
 
-    <footer>
+		<!-- Scripts -->
+			<script src="assets/js/jquery-3.2.1.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-    </footer>
-    
-    <script src="js/jquery-3.2.1.js"></script>
-    <script src="js/main.js"></script>
-</body>
+	</body>
 </html>
